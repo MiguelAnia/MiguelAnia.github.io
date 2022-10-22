@@ -7,7 +7,7 @@ function CookieBomb() {
     var pollution = Array(4000).join('a');
     if(confirm('Should I Cookie Bomba '+base_domain+'?')){
     for(var i=1;i<3;i++){
-        document.cookie='bomb'+i+'='+pollution+';Domain='+base_domain;
+        document.cookie='bomb'+i+'='+pollution+';domain='+base_domain;
     }
 }
 }
